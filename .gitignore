@@ -1,6 +1,6 @@
 target
 build
-log
+logs
 .settings
 .project
 .classpath

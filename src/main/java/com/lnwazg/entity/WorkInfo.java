@@ -8,27 +8,17 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 import com.lnwazg.dbkit.anno.entity.AutoIncrement;
 import com.lnwazg.dbkit.anno.entity.Comment;
 import com.lnwazg.dbkit.anno.entity.Id;
-import com.lnwazg.dbkit.anno.entity.Varchar;
 
-@Comment("商户表")
-public class Business
+@Comment("工作信息表")
+public class WorkInfo
 {
     @Id
     @AutoIncrement(startValue = 10000)
     @Comment("主键")
     Integer id;
     
-    @Varchar(200)
-    @Comment("商户名称、简称")
-    String businessName;
-    
-    @Varchar(20)
-    @Comment("省")
-    String province;
-    
-    @Varchar(20)
-    @Comment("市")
-    String city;
+    @Comment("工作信息内容")
+    String content;
     
     @Comment("创建时间")
     Date createTime;
@@ -44,42 +34,20 @@ public class Business
         return id;
     }
     
-    public Business setId(Integer id)
+    public WorkInfo setId(Integer id)
     {
         this.id = id;
         return this;
     }
     
-    public String getBusinessName()
+    public String getContent()
     {
-        return businessName;
+        return content;
     }
     
-    public Business setBusinessName(String businessName)
+    public WorkInfo setContent(String content)
     {
-        this.businessName = businessName;
-        return this;
-    }
-    
-    public String getProvince()
-    {
-        return province;
-    }
-    
-    public Business setProvince(String province)
-    {
-        this.province = province;
-        return this;
-    }
-    
-    public String getCity()
-    {
-        return city;
-    }
-    
-    public Business setCity(String city)
-    {
-        this.city = city;
+        this.content = content;
         return this;
     }
     
@@ -88,10 +56,9 @@ public class Business
         return createTime;
     }
     
-    public Business setCreateTime(Date createTime)
+    public WorkInfo setCreateTime(Date createTime)
     {
         this.createTime = createTime;
         return this;
     }
-    
 }
