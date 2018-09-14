@@ -1,0 +1,64 @@
+[I] [2018-09-14 17:42:37] 开始初始化HikariCP数据源... 
+[I] [2018-09-14 17:42:37] 开始加载sqlite数据库驱动... 
+[I] [2018-09-14 17:42:37] SQL_MONITOR已启用... 
+[I] [2018-09-14 17:42:37] 启动内置http服务器进行sql监控... 
+[I] [2018-09-14 17:42:37] HttpServer start generating route table... 
+[I] [2018-09-14 17:42:37] Adding FreeMarker route -> /dbkit/web --> static/ 
+[I] [2018-09-14 17:42:37] 开始加载Http Filter配置文件:filters.cfg 
+[I] [2018-09-14 17:42:37] 加载到的filterClassList为:[class com.lnwazg.httpkit.filter.common.CORSFilter] 
+[I] [2018-09-14 17:42:37] Adding route -> Route [path=/dbkit/monitor/monitorJson.do, method=void com.lnwazg.dbkit.tools.sqlmonitor.controller.MonitorController.monitorJson()] 
+[I] [2018-09-14 17:42:37] Adding route -> Route [path=/dbkit/monitor/queryAllSqlData.do, method=void com.lnwazg.dbkit.tools.sqlmonitor.controller.MonitorController.queryAllSqlData()] 
+[I] [2018-09-14 17:42:37] Adding route -> Route [path=/dbkit/monitor/queryBadSqlData.do, method=void com.lnwazg.dbkit.tools.sqlmonitor.controller.MonitorController.queryBadSqlData()] 
+[I] [2018-09-14 17:42:37] Routing over! 
+[I] [2018-09-14 17:42:37] 未发现myzoo-api依赖库，因此忽略注册到myzoo注册中心。 
+[I] [2018-09-14 17:42:37] Http服务器启动完毕！端口号：5000 
+[I] [2018-09-14 17:42:37] HttpServer start OK! Cost 115 ms! Please visit http://127.0.0.1:5000/dbkit/__info__
+ 
+[I] [2018-09-14 17:42:37] begin package search entities and init database tables... 
+[I] [2018-09-14 17:42:37] [package search] init com.lnwazg.entity.Business  
+[I] [2018-09-14 17:42:37] begin package search dao... 
+[I] [2018-09-14 17:42:37] begin package search service... 
+[I] [2018-09-14 17:42:37] HttpServer start generating route table... 
+[I] [2018-09-14 17:42:37] 开始加载Http Filter配置文件:filters.cfg 
+[I] [2018-09-14 17:42:37] 加载到的filterClassList为:[class com.lnwazg.httpkit.filter.common.CORSFilter] 
+[I] [2018-09-14 17:42:37] Routing over! 
+[I] [2018-09-14 17:42:37] 未发现myzoo-api依赖库，因此忽略注册到myzoo注册中心。 
+[I] [2018-09-14 17:42:37] Http服务器启动完毕！端口号：80 
+[I] [2018-09-14 17:42:37] HttpServer start OK! Cost 3 ms! Please visit http://127.0.0.1:80/__info__
+ 
+[I] [2018-09-14 17:42:51] Receive request: GET /dbkit/__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:08] Receive request: null 
+[I] [2018-09-14 17:43:08] Receive request: GET /dbkit/web/page/monitor.ftl HTTP/1.1 
+[I] [2018-09-14 17:43:08] Receive request: GET /dbkit/web/layui/css/layui.css HTTP/1.1 
+[I] [2018-09-14 17:43:08] Receive request: GET /dbkit/web/layui/layui.js HTTP/1.1 
+[I] [2018-09-14 17:43:08] Receive request: GET /dbkit/web/layui/lay/modules/table.js HTTP/1.1 
+[I] [2018-09-14 17:43:08] Receive request: GET /dbkit/web/layui/lay/modules/laytpl.js HTTP/1.1 
+[I] [2018-09-14 17:43:08] Receive request: GET /dbkit/web/layui/lay/modules/laypage.js HTTP/1.1 
+[I] [2018-09-14 17:43:08] Receive request: GET /dbkit/web/layui/lay/modules/layer.js HTTP/1.1 
+[I] [2018-09-14 17:43:08] Receive request: GET /dbkit/web/layui/css/modules/layer/default/layer.css?v=3.1.1 HTTP/1.1 
+[I] [2018-09-14 17:43:08] Receive request: GET /dbkit/web/layui/lay/modules/jquery.js HTTP/1.1 
+[I] [2018-09-14 17:43:08] Receive request: GET /dbkit/web/layui/lay/modules/form.js HTTP/1.1 
+[I] [2018-09-14 17:43:08] Receive request: GET /dbkit/web/layui/lay/modules/element.js HTTP/1.1 
+[I] [2018-09-14 17:43:09] Receive request: GET /dbkit/monitor/queryAllSqlData.do?page=1&limit=10 HTTP/1.1 
+[I] [2018-09-14 17:43:09] Receive request: GET /dbkit/monitor/queryBadSqlData.do?page=1&limit=10 HTTP/1.1 
+[I] [2018-09-14 17:43:09] Receive request: GET /dbkit/web/layui/font/iconfont.woff?v=230-rc1 HTTP/1.1 
+[I] [2018-09-14 17:43:44] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:45] Receive request: GET /favicon.ico HTTP/1.1 
+[I] [2018-09-14 17:43:47] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:47] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:48] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:48] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:48] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:49] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:49] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:50] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:50] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:56] Receive request: null 
+[I] [2018-09-14 17:43:56] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:56] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:56] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:56] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:57] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:57] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:57] Receive request: GET /__info__ HTTP/1.1 
+[I] [2018-09-14 17:43:57] Receive request: GET /__info__ HTTP/1.1 
