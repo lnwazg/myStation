@@ -3,7 +3,6 @@
 
 ### 依赖项目
 - kit
-- JavaExpectX
 - dbkit
 - httpkit
 
