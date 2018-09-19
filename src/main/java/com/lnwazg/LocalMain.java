@@ -6,6 +6,7 @@ import com.lnwazg.dbkit.jdbc.MyJdbc;
 import com.lnwazg.dbkit.utils.DbKit;
 import com.lnwazg.httpkit.filter.CtrlFilterChain;
 import com.lnwazg.httpkit.server.HttpServer;
+import com.lnwazg.kit.job.JobLoader;
 import com.lnwazg.kit.log.Logs;
 import com.lnwazg.kit.platform.Platforms;
 import com.lnwazg.kit.singleton.B;
@@ -15,6 +16,7 @@ public class LocalMain
 {
     public static void main(String[] args)
     {
+        
         // 日志中是否打开时间戳记录
         Logs.TIMESTAMP_LOG_SWITCH = true;
         
@@ -62,12 +64,14 @@ public class LocalMain
             // 为controller设置动态代理
             // 最终初始化controller
             server.packageSearchAndInit("com.lnwazg.controller", ctrlFilterChain);
-            // 监听在这个端口处
+            // 启动服务器，并监听在这个端口处
             server.listen();
         }
         catch (IOException e)
         {
             e.printStackTrace();
         }
+        
+        JobLoader.loadDefaultPackageJob();
     }
 }

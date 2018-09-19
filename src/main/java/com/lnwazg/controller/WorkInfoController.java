@@ -3,6 +3,7 @@ package com.lnwazg.controller;
 import java.util.Date;
 
 import com.lnwazg.entity.WorkInfo;
+import com.lnwazg.kit.anno.Anno;
 import com.lnwazg.kit.common.model.FrontObj;
 import com.lnwazg.kit.controllerpattern.Controller;
 import com.lnwazg.kit.singleton.B;
@@ -23,6 +24,7 @@ public class WorkInfoController extends ParentController
      * 测试HelloWorld
      * @author nan.li
      */
+    @Anno("测试HelloWorld")
     void hello()
     {
         okHtml("helloWorld");
@@ -32,6 +34,7 @@ public class WorkInfoController extends ParentController
      * 保存工作信息
      * @author nan.li
      */
+    @Anno("保存工作信息")
     void saveWorkInfo()
     {
         FrontObj frontObj = new FrontObj();
