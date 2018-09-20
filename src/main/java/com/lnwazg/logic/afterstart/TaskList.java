@@ -1,4 +1,4 @@
-package com.lnwazg.afterstart;
+package com.lnwazg.logic.afterstart;
 
 import com.lnwazg.kit.anno.Anno;
 import com.lnwazg.kit.handlerseq.Task;
