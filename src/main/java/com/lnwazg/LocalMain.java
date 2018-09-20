@@ -14,6 +14,11 @@ import com.lnwazg.kit.singleton.B;
 import com.lnwazg.service.GuokeRssService;
 import com.lnwazg.util.Constants;
 
+/**
+ * 以普通的手动配置的方式启动
+ * @author nan.li
+ * @version 2018年9月20日
+ */
 public class LocalMain {
 	public static void main(String[] args) {
 
