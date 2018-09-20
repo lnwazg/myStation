@@ -1,8 +1,6 @@
 package com.lnwazg;
 
 import com.lnwazg.boot.BootApplication;
-import com.lnwazg.kit.handlerseq.HandlerSequence;
-import com.lnwazg.service.GuokeRssService;
 
 /**
  * 以Boot的方式启动
@@ -14,12 +12,5 @@ public class BootMain
     public static void main(String[] args)
     {
         BootApplication.run(BootMain.class, args);
-        
-        //启动后立即要做的一系列事情
-        HandlerSequence.getInstance()
-            .addHandler(() -> {
-                GuokeRssService.refreshRssContentCache();
-            })
-            .execAll();
     }
 }
