@@ -65,10 +65,15 @@ public class LocalMain {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		
+		//启动定时任务调度器
 		JobLoader.loadDefaultPackageJob();
-		HandlerSequence.getInstance().addHandler(() -> {
+		
+		//启动后立即要做的一系列事情
+		HandlerSequence.getInstance()
+		.addHandler(() -> {
 			GuokeRssService.refreshRssContentCache();
-		}).execAll();
+		})
+		.execAll();
 	}
 }
