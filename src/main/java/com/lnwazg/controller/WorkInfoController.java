@@ -52,4 +52,15 @@ public class WorkInfoController extends ParentController
             processFail(e, frontObj);
         }
     }
+    
+	void queryWorkInfo() {
+		FrontObj frontObj = new FrontObj();
+		try {
+			String content = getParam("content");
+			Validates.validateNotEmpty(content, "content参数不能为空！");
+			okJson(frontObj.success().setData(workInfoService.queryBycontent(content)));
+		} catch (Exception e) {
+			processFail(e, frontObj);
+		}
+	}
 }
