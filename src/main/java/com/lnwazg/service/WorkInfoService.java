@@ -16,7 +16,7 @@ import com.lnwazg.kit.singleton.B;
 public class WorkInfoService {
 	private WorkInfoDao workInfoDao = B.g(WorkInfoDao.class);
 
-	@Transactional
+	@Transactional(dsName="ds1")
 	public void saveWorkInfo(WorkInfo workInfo) throws SQLException {
 		workInfoDao.insert(workInfo);
 	}
