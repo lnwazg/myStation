@@ -13,15 +13,19 @@ import com.lnwazg.kit.singleton.B;
  * @author nan.li
  * @version 2018年9月19日
  */
-public class WorkInfoService {
-	private WorkInfoDao workInfoDao = B.g(WorkInfoDao.class);
-
-	@Transactional(dsName="ds1")
-	public void saveWorkInfo(WorkInfo workInfo) throws SQLException {
-		workInfoDao.insert(workInfo);
-	}
-
-	public List<WorkInfo> queryBycontent(String content) {
-		return workInfoDao.queryByContent(content);
-	}
+public class WorkInfoService
+{
+    private WorkInfoDao workInfoDao = B.g(WorkInfoDao.class);
+    
+    @Transactional
+    public void saveWorkInfo(WorkInfo workInfo)
+        throws SQLException
+    {
+        workInfoDao.insert(workInfo);
+    }
+    
+    public List<WorkInfo> queryBycontent(String content)
+    {
+        return workInfoDao.queryByContent(content);
+    }
 }

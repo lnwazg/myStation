@@ -5,13 +5,11 @@ import java.util.Date;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-import com.lnwazg.dbkit.anno.dao.DataSource;
 import com.lnwazg.dbkit.anno.entity.AutoIncrement;
 import com.lnwazg.dbkit.anno.entity.Comment;
 import com.lnwazg.dbkit.anno.entity.Id;
 
 @Comment("工作信息表")
-@DataSource("ds1")
 public class WorkInfo
 {
     @Id
