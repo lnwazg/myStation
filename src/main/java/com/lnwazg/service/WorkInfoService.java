@@ -10,7 +10,6 @@ import com.lnwazg.kit.singleton.B;
 
 /**
  * Service类
- * 
  * @author nan.li
  * @version 2018年9月19日
  */
