@@ -13,7 +13,7 @@ import com.lnwazg.dbkit.anno.entity.Id;
 public class WorkInfo
 {
     @Id
-    @AutoIncrement(startValue = 10000)
+    @AutoIncrement
     @Comment("主键")
     Integer id;
     
