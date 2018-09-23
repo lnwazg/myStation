@@ -1,10 +1,7 @@
 # myStation
-我的工作站，里面啥都有~
+SuperBoot的示例项目
 
 ### 依赖项目
-- kit
-- dbkit
-- httpkit
 - SuperBoot
 
 ### 近期计划
