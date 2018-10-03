@@ -2,6 +2,8 @@ package com.lnwazg.logic.afterstart;
 
 import com.lnwazg.kit.anno.Anno;
 import com.lnwazg.kit.handlerseq.Task;
+import com.lnwazg.kit.singleton.B;
+import com.lnwazg.kit.singleton.BeanMgr;
 import com.lnwazg.service.GuokeRssService;
 
 /**
@@ -15,6 +17,6 @@ public class TaskList
     @Anno("刷新RSS")
     void refreshRss()
     {
-        GuokeRssService.refreshRssContentCache();
+        BeanMgr.g(GuokeRssService.class).refreshRssContentCache();
     }
 }
