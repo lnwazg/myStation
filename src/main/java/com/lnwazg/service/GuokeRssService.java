@@ -30,7 +30,7 @@ public class GuokeRssService
     {
         Logs.i("refreshRssContentCacheFromSqliteDB...");
         List<String> contentList = new ArrayList<String>();
-        List<RssInfo> rssInfos = rssInfoDao.listAll(RssInfo.class);
+        List<RssInfo> rssInfos = rssInfoDao.queryByOrderByIdDesc();
         for (RssInfo rssInfo : rssInfos)
         {
             contentList.add(rssInfo.getContent());

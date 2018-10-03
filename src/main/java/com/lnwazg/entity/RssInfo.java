@@ -1,16 +1,12 @@
 package com.lnwazg.entity;
 
-import java.util.Date;
-
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
 import com.lnwazg.dbkit.anno.entity.AutoIncrement;
 import com.lnwazg.dbkit.anno.entity.Comment;
 import com.lnwazg.dbkit.anno.entity.Id;
+import com.lnwazg.dbkit.tools.entity.template.TimestampEntityTemplate;
 
 @Comment("RSS表")
-public class RssInfo
+public class RssInfo extends TimestampEntityTemplate
 {
     @Id
     @AutoIncrement
@@ -19,15 +15,6 @@ public class RssInfo
     
     @Comment("rss内容")
     String content;
-    
-    @Comment("创建时间")
-    Date createTime;
-    
-    @Override
-    public String toString()
-    {
-        return ToStringBuilder.reflectionToString(this, ToStringStyle.JSON_STYLE);
-    }
     
     public Integer getId()
     {
@@ -51,14 +38,4 @@ public class RssInfo
         return this;
     }
     
-    public Date getCreateTime()
-    {
-        return createTime;
-    }
-    
-    public RssInfo setCreateTime(Date createTime)
-    {
-        this.createTime = createTime;
-        return this;
-    }
 }

@@ -1,16 +1,12 @@
 package com.lnwazg.entity;
 
-import java.util.Date;
-
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
 import com.lnwazg.dbkit.anno.entity.AutoIncrement;
 import com.lnwazg.dbkit.anno.entity.Comment;
 import com.lnwazg.dbkit.anno.entity.Id;
+import com.lnwazg.dbkit.tools.entity.template.TimestampEntityTemplate;
 
 @Comment("工作信息表")
-public class WorkInfo
+public class WorkInfo extends TimestampEntityTemplate
 {
     @Id
     @AutoIncrement
@@ -19,15 +15,6 @@ public class WorkInfo
     
     @Comment("工作信息内容")
     String content;
-    
-    @Comment("创建时间")
-    Date createTime;
-    
-    @Override
-    public String toString()
-    {
-        return ToStringBuilder.reflectionToString(this, ToStringStyle.JSON_STYLE);
-    }
     
     public Integer getId()
     {
@@ -51,14 +38,4 @@ public class WorkInfo
         return this;
     }
     
-    public Date getCreateTime()
-    {
-        return createTime;
-    }
-    
-    public WorkInfo setCreateTime(Date createTime)
-    {
-        this.createTime = createTime;
-        return this;
-    }
 }
