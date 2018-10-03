@@ -2,7 +2,6 @@ package com.lnwazg.logic.afterstart;
 
 import com.lnwazg.kit.anno.Anno;
 import com.lnwazg.kit.handlerseq.Task;
-import com.lnwazg.kit.singleton.B;
 import com.lnwazg.kit.singleton.BeanMgr;
 import com.lnwazg.service.GuokeRssService;
 
