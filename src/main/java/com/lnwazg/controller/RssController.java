@@ -36,11 +36,11 @@ public class RssController extends ParentController
         try
         {
             //加载从db中查询的结果，若查不到，则主动查一次db
-            List<String> contentList = (List<String>)JvmMemCacheLite.get("rssListSqlite", 2, TimeUnit.MINUTES);
+            List<String> contentList = (List<String>)JvmMemCacheLite.get("rssListSqlite", 1, TimeUnit.MINUTES);
             if (contentList == null)
             {
                 guokeRssService.refreshRssContentCacheFromSqliteDB();
-                contentList = (List<String>)JvmMemCacheLite.get("rssListSqlite", 2, TimeUnit.MINUTES);
+                contentList = (List<String>)JvmMemCacheLite.get("rssListSqlite", 1, TimeUnit.MINUTES);
             }
             okJson(contentList);
         }

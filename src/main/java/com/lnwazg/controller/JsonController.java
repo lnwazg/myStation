@@ -25,11 +25,11 @@ public class JsonController extends ParentController
     List<String> rss()
         throws SQLException
     {
-        List<String> contentList = (List<String>)JvmMemCacheLite.get("rssListSqlite", 2, TimeUnit.MINUTES);
+        List<String> contentList = (List<String>)JvmMemCacheLite.get("rssListSqlite", 1, TimeUnit.MINUTES);
         if (contentList == null)
         {
             guokeRssService.refreshRssContentCacheFromSqliteDB();
-            contentList = (List<String>)JvmMemCacheLite.get("rssListSqlite", 2, TimeUnit.MINUTES);
+            contentList = (List<String>)JvmMemCacheLite.get("rssListSqlite", 1, TimeUnit.MINUTES);
         }
         return contentList;
     }
