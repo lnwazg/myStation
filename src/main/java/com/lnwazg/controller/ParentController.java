@@ -19,7 +19,7 @@ public class ParentController extends BaseController
         Logs.e(e);
         if (StringUtils.isNotEmpty(e.getMessage()) && e.getMessage().indexOf("未登录") != -1)
         {
-            okJson(frontObj.fail(10024, e.getMessage()));
+            okJson(frontObj.fail(10001, e.getMessage()));
         }
         else
         {

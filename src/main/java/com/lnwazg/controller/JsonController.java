@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import com.lnwazg.httpkit.anno.JsonResponse;
+import com.lnwazg.httpkit.anno.httpmethod.POST;
 import com.lnwazg.kit.cache.JvmMemCacheLite;
 import com.lnwazg.kit.controllerpattern.Controller;
 import com.lnwazg.kit.singleton.B;
@@ -16,6 +17,7 @@ public class JsonController extends ParentController
 {
     GuokeRssService guokeRssService = B.g(GuokeRssService.class);
     
+    @POST
     String sayHello()
     {
         return "hello";
