@@ -3,7 +3,7 @@ package com.lnwazg.entity;
 import com.lnwazg.dbkit.anno.entity.AutoIncrement;
 import com.lnwazg.dbkit.anno.entity.Comment;
 import com.lnwazg.dbkit.anno.entity.Id;
-import com.lnwazg.dbkit.tools.entity.template.TimestampEntityTemplate;
+import com.lnwazg.dbkit.template.entity.TimestampEntityTemplate;
 
 @Comment("RSS表")
 public class RssInfo extends TimestampEntityTemplate
