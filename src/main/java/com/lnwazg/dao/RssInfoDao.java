@@ -10,4 +10,9 @@ public interface RssInfoDao extends MyJdbc
 {
     @Select
     List<RssInfo> queryByOrderByIdDesc();
+    
+    @Select
+    List<RssInfo> queryOrderByIdDesc();
+    
+    
 }
