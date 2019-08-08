@@ -82,7 +82,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.lnwazg.LocalMain</mainClass>
+							<mainClass>com.lnwazg.BootMain</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
