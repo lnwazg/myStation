@@ -1,4 +1,4 @@
-package com.lnwazg.controller.api;
+package com.lnwazg.rpc.service;
 
 public interface UserService
 {

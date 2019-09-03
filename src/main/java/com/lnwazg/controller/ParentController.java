@@ -2,6 +2,7 @@ package com.lnwazg.controller;
 
 import org.apache.commons.lang3.StringUtils;
 
+import com.lnwazg.httpkit.anno.IgnoreRoute;
 import com.lnwazg.httpkit.controller.BaseController;
 import com.lnwazg.kit.common.model.FrontObj;
 import com.lnwazg.kit.log.Logs;
@@ -14,6 +15,7 @@ public class ParentController extends BaseController
      * @param e
      * @param frontObj
      */
+    @IgnoreRoute
     protected void processFail(Exception e, FrontObj frontObj)
     {
         Logs.e(e);
