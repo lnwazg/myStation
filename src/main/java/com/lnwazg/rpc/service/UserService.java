@@ -8,4 +8,6 @@ public interface UserService
     UserResponse processUserRequest(UserRequest userRequest);
     
     String queryUser(String name);
+    
+    void processAsync(UserRequest userRequest);
 }

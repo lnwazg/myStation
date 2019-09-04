@@ -16,4 +16,10 @@ public class UserSericeImpl implements UserService
     {
         return new UserResponse().setMsg("This is reply from " + userRequest.getName() + " and age is " + userRequest.getAge());
     }
+    
+    @Override
+    public void processAsync(UserRequest userRequest)
+    {
+        System.out.println("receive processAsync call, userRequest=" + userRequest);
+    }
 }

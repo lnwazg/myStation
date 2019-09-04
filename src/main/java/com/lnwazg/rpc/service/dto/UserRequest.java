@@ -1,6 +1,7 @@
 package com.lnwazg.rpc.service.dto;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * 用户请求
@@ -38,6 +39,6 @@ public class UserRequest
     @Override
     public String toString()
     {
-        return ToStringBuilder.reflectionToString(this);
+        return ToStringBuilder.reflectionToString(this, ToStringStyle.JSON_STYLE);
     }
 }
